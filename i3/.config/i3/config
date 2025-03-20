@@ -19,14 +19,22 @@ font pango:Hack Nerd Font Mono 12
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
+# configure gaps
+gaps inner 10px
+
+# configure borders
+default_border none
+
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id picom
+exec --no-startup-id picom -f 
 
 exec_always killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
+
+exec_always --no-startup-id feh --bg-scale ~/.config/feh/wallpaper.jpg
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
