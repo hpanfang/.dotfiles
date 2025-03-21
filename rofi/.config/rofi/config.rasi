@@ -1,0 +1,13 @@
+configuration {
+    modi: "drun,window,filebrowser";
+    show-icons: true;
+    display-drun: " Run: ";
+    matching: "fuzzy";
+    sort: true;
+    disable-history: false;
+    font: "Hack Nerd Font Mono 12";
+    terminal: "kitty"; // Change to your preferred terminal
+}
+
+@theme "rounded-nord-dark.rasi"
+
